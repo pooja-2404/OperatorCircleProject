@@ -26,8 +26,8 @@ public class Main extends HttpServlet {
 			throws ServletException, IOException {
 		try {
 			String jdbcUrl = "jdbc:mysql://localhost:3306/db1";
-			String dbUser = "root";
-			String dbPassword = "Pooja@240494";
+			String dbUser = "";
+			String dbPassword = "";
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			 conn = DriverManager.getConnection(jdbcUrl, dbUser, dbPassword);
 			getServletContext().setAttribute("dbConnection", conn);
